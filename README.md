@@ -149,3 +149,86 @@ int main ()
 	}
 	
 	 ATIVIDADE 8
+
+  #include<stdio.h>
+
+int main ()
+{
+    float Fahrenheit;
+    float celsius;
+    float total;
+    
+    
+    
+	    
+    printf("digite um valor para Fahrenheit:");
+    scanf("%f", &Fahrenheit);
+    
+    
+    total = (Fahrenheit-32)/1.8;
+    
+    printf("o valor em celsius e: %f", total);
+ 
+    return 0;
+    
+}
+
+ATIVIDADE 9
+
+#include <stdio.h>
+#define PI 3.14159
+
+int main() {
+    float raio, diametro, comprimento, area;
+
+    // Solicita o valor do raio ao usuário
+    printf("Digite o valor do raio da circunferência: ");
+    scanf("%f", &raio);
+
+    // Calcula o diâmetro
+    diametro = 2 * raio;
+
+    // Calcula o comprimento (circunferência)
+    comprimento = 2 * PI * raio;
+
+    // Calcula a área
+    area = PI * raio * raio;
+
+    // Exibe os resultados
+    printf("Diâmetro: %.2f\n", diametro);
+    printf("Comprimento: %.2f\n", comprimento);
+    printf("Área: %.2f\n", area);
+
+    return 0;
+}
+
+ATIVIDADE 10
+
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+
+    
+    printf("Digite o valor da primeira variável (a): ");
+    scanf("%d", &a);
+    printf("Digite o valor da segunda variável (b): ");
+    scanf("%d", &b);
+
+    
+    printf("Valores originais:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    
+    temp = a;
+    a = b;
+    b = temp;
+
+    
+    printf("Valores após a troca:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}
